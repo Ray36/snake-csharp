@@ -10,17 +10,22 @@ namespace Snake_csharp
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point(1,2,'*');
-            p1.Draw();
+            Console.SetBufferSize(80, 25);
 
-            Point p2 = new Point(4,5,'#');
-            p2.Draw();
+            HorizontalLine TopLine = new HorizontalLine(0, 78, 0, '+');
+            HorizontalLine BotLine = new HorizontalLine(0, 78, 24, '+');
+            VerticalLine leftLine = new VerticalLine(0, 0, 24, '+');
+            VerticalLine rightLine = new VerticalLine(78, 0, 24, '+');
+            TopLine.Draw();
+            BotLine.Draw();
+            leftLine.Draw();
+            rightLine.Draw();
 
-            HorizontalLine line1 = new HorizontalLine(5, 10, 8, '+');
-            line1.Draw();
+            Point p = new Point(4, 5, '*');
+            p.Draw();
             Console.ReadLine();
         }
 
-       
+
     }
 }
