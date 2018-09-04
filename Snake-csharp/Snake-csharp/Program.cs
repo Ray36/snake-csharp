@@ -11,18 +11,13 @@ namespace Snake_csharp
         static void Main(string[] args)
         {
             Point p1 = new Point(1,2,'*');
-        
             p1.Draw();
 
-        
             Point p2 = new Point(4,5,'#');
-         
             p2.Draw();
 
-            List<Point> pList = new List<Point>();
-            pList.Add(p1);
-            pList.Add(p2);
-
+            HorizontalLine line1 = new HorizontalLine(5, 10, 8, '+');
+            line1.Draw();
             Console.ReadLine();
         }
 

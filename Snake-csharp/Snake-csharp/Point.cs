@@ -12,7 +12,9 @@ namespace Snake_csharp
         public int y;
         public char sym;
 
-        public Point();
+        public Point()
+        {
+        }
 
         public Point(int _x, int _y, char _sym)
         {
@@ -24,8 +26,8 @@ namespace Snake_csharp
         public void Draw()
         {
 
-            Console.SetCursorPosition(p.x, p.y);
-            Console.Write(p.sym);
+            Console.SetCursorPosition(x, y);
+            Console.Write(sym);
         }
     }
 }
