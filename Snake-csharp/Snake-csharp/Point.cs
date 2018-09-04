@@ -53,5 +53,10 @@ namespace Snake_csharp
 
             return x + "," + y + "," + sym;
         }
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
+        }
     }
 }
