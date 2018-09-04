@@ -10,24 +10,18 @@ namespace Snake_csharp
     {
         static void Main(string[] args)
         {
-            Point p1 = new Point();
-            p1.x = 1;
-            p1.y = 2;
-            p1.sym = '*';
-            /*int x1 = 1;
-            int y1 = 3;
-            char sym1 = '*';
-            */
+            Point p1 = new Point(1,2,'*');
+        
             p1.Draw();
 
-            /*int x2 = 4;
-            int y2 = 5;
-            char sym2 = '#';*/
-            Point p2 = new Point();
-            p2.x = 4;
-            p2.y = 5;
-            p2.sym = '#';
+        
+            Point p2 = new Point(4,5,'#');
+         
             p2.Draw();
+
+            List<Point> pList = new List<Point>();
+            pList.Add(p1);
+            pList.Add(p2);
 
             Console.ReadLine();
         }
