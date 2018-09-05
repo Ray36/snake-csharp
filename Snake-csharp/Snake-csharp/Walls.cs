@@ -8,7 +8,7 @@ namespace Snake_csharp
 {
     class Walls
     {
-        List<Figure> wallList;
+         List<Figure> wallList;
 
         public Walls(int mapWidth, int mapHeight)
         {
